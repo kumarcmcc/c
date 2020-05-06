@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+    int num,temp,sum=0,r;
+    printf ("Enter a number  : ");
+    scanf("%d",&num);
+    temp = num;
+    while (temp!=0)
+    {
+        r=temp%10;
+        sum=sum*10+r;
+        temp=temp/10;
+    }
+    printf("The revers is %d\n",sum);
+    if (num==sum)
+        printf("Pal");
+    else
+        printf("not Pal");
+
+
+
+
+     return 0;
+
+}
